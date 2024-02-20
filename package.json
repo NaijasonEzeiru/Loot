@@ -1,0 +1,15 @@
+{
+  "name": "loot",
+  "version": "1.0.0",
+  "description": "Landing page of Loot app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./src/tw.css -o ./dist/main.css --watch"
+  },
+  "author": "Chibuike Ezeiru",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

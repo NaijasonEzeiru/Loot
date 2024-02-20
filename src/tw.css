@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --red-color: #ad2b15;
+    --blue-color: #0c0a74;
+  }
+}
