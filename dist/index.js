@@ -1,35 +1,20 @@
-let ham = false;
-
 const menuIcon = document.getElementById("menu-icon");
-const navBar = document.getElementsByTagName("nav")[0];
-// const menuShape = document.getElementById("menu-shape");
-
-let x = menuIcon.getAttribute("aria-expanded");
-
-const setHam = () => {
-  ham = !ham;
-};
+const closeIcon = document.getElementById("close");
+const navBar = document.getElementById("nav");
+const navItem = document.querySelectorAll(".px-3");
 
 function menuToggle() {
-  x = !x;
-  menuIcon.setAttribute("aria-expanded", x);
-  setHam();
-  if (ham) {
-    navBar.classList.remove("-translate-y-full");
-  } else {
-    navBar.classList.add("-translate-y-full");
-  }
+  menuIcon.setAttribute("aria-expanded", true);
+  navBar.classList.remove("-translate-y-full");
 }
 
-function menuClick() {
+function closeMenu() {
   menuIcon.setAttribute("aria-expanded", false);
-  if (ham) {
-    x = !x;
-    menuIcon.setAttribute("aria-expanded", x);
-    setHam();
-    navBar.classList.add("-translate-y-full");
-  }
+  navBar.classList.add("-translate-y-full");
 }
 
 menuIcon.addEventListener("click", menuToggle);
-navBar.addEventListener("click", menuClick);
+closeIcon.addEventListener("click", closeMenu);
+navItem.forEach((element) => {
+  element.addEventListener("click", closeMenu);
+});

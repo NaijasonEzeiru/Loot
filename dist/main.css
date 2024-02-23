@@ -1389,6 +1389,12 @@ video {
     gap: 118px;
   }
 
+  .lg\:space-y-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+  }
+
   .lg\:rounded-\[20px\] {
     border-radius: 20px;
   }
@@ -1481,6 +1487,11 @@ video {
     padding-bottom: 101px;
   }
 
+  .lg\:px-64 {
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+
   .lg\:pb-14 {
     padding-bottom: 3.5rem;
   }
@@ -1523,6 +1534,14 @@ video {
 
   .lg\:pt-\[86px\] {
     padding-top: 86px;
+  }
+
+  .lg\:pb-\[182px\] {
+    padding-bottom: 182px;
+  }
+
+  .lg\:pt-16 {
+    padding-top: 4rem;
   }
 
   .lg\:text-left {
