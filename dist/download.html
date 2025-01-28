@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./public/favicon.ico" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <title>Loot</title>
+  </head>
+  <body class="font-Inter w-screen px-6 sm:px-28 lg:px-48 pb-20 md:pb-32">
+    <header class="flex gap-2 items-center font-bold pt-14 lg:pt-24">
+      <img
+        src="./public/looticon.png"
+        alt="Loot logo"
+        class="flex size-[18px] bg-customRed lg:size-9"
+      />
+      <p class="text-[#990707] font-bold lg:text-3xl">Loot</p>
+    </header>
+    <main>
+      <div class="modal"></div>
+      <section
+        class="overflow-x-hidden pt-10 rounded-lg w-full z-50 flex flex-col md:pt-14 2xl:items-center md:rounded-none mb-9"
+      >
+        <h1 class="font-semibold text-lg mb-6 md:text-3xl md:font-medium">
+          Loot: Declutter now, sell or buy house hold items
+        </h1>
+        <div class="flex gap-4 md:gap-7 mb-3.5 items-center md:mb-8">
+          <img
+            alt="hunt game logo"
+            src="./public/looticon.png"
+            class="size-11 md:size-24 md:mr-5"
+          />
+          <span
+            class="flex flex-col justify-between md:justify-center text-xs md:text-lg py-1 border-r border-[#9B9B9B] pr-5 md:h-fit"
+          >
+            <span class="flex gap-1 items-center">
+              4.5
+              <svg
+                width="16"
+                height="13"
+                viewBox="0 0 16 13"
+                class="w-2.5 h-2 md:w-4 md:h-3"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.00038 11.1236L3.98695 12.9162C3.84508 12.9795 3.68517 13.0079 3.52531 12.9981C3.36544 12.9883 3.21199 12.9407 3.08231 12.8607C2.95264 12.7806 2.8519 12.6714 2.79149 12.5452C2.73108 12.4191 2.71341 12.2811 2.74048 12.1469L3.50674 8.35021L0.259568 5.6607C0.144695 5.56562 0.0634474 5.44511 0.0250213 5.31281C-0.0134049 5.18052 -0.00747442 5.04173 0.0421412 4.91216C0.0917569 4.78258 0.183076 4.66739 0.305762 4.57963C0.428448 4.49187 0.5776 4.43504 0.736336 4.41558L5.22311 3.86162L7.22982 0.407235C7.30072 0.28501 7.41047 0.182087 7.54665 0.110115C7.68283 0.0381445 7.84001 0 8.00038 0C8.16076 0 8.31794 0.0381445 8.45412 0.110115C8.5903 0.182087 8.70005 0.28501 8.77094 0.407235L10.7777 3.86162L15.2644 4.41631C15.423 4.43587 15.5719 4.49272 15.6945 4.58044C15.817 4.66815 15.9082 4.78323 15.9578 4.91267C16.0074 5.04211 16.0134 5.18076 15.9751 5.31295C15.9368 5.44513 15.8558 5.56559 15.7412 5.6607L12.4932 8.35021L13.2594 12.1469C13.2864 12.281 13.2687 12.4189 13.2083 12.5449C13.1479 12.6709 13.0473 12.7801 12.9177 12.8601C12.7882 12.9401 12.6349 12.9877 12.4752 12.9976C12.3155 13.0075 12.1557 12.9793 12.0138 12.9162L8.00038 11.1236Z"
+                  fill="#C7920F"
+                />
+              </svg>
+            </span>
+            <p>6.5k Reviews</p>
+          </span>
+          <span
+            class="flex flex-col justify-between md:justify-center md:items-center text-xs md:text-lg py-1 border-r border-[#9B9B9B] pr-5 md:h-fit"
+          >
+            <p>200k+</p>
+            <p>Downloads</p>
+          </span>
+          <span
+            class="flex flex-col justify-between md:justify-center text-xs md:text-lg py-1"
+          >
+            <p>18+</p>
+            <p>Rated 18y+</p>
+          </span>
+        </div>
+        <div id="downloadCheck"></div>
+        <!-- <DownloadCheck /> -->
+        <p class="text-sm mb-2 md:text-[1.375rem] md:mb-4">
+          Loot in screenshots
+        </p>
+        <div class="overflow-x-auto mb-11 gap-2 md:gap-6 flex">
+          <img src="./public/hunt2.png" alt="" />
+          <img src="./public/hunt1.png" alt="" />
+          <img src="./public/hunt3.png" alt="" />
+          <img src="./public/hunt2.png" alt="" />
+        </div>
+        <div
+          class="pt-8 space-y-5 md:space-y-8 md:text-[1.375rem] md:font-medium"
+        >
+          <h4 class="text-lg md:text-2xl font-extrabold">About this app</h4>
+          <p>
+            Welcome to Loots – the smart way to buy and sell neatly used house
+            equipment! Whether you're looking to declutter your home or score
+            incredible deals on high-quality secondhand items, Loots has got you
+            covered. Our platform is designed to make buying and selling house
+            equipment seamless, reliable, and rewarding.
+          </p>
+          <div>
+            <h4 class="">Explore, Buy, Sell:</h4>
+            <p>
+              Discover a vibrant marketplace filled with neatly used appliances,
+              furniture, and other household essentials. Find what you need or
+              list what you no longer use – all in one app! From kitchen gadgets
+              to living room décor, Loots connects buyers and sellers in your
+              community.
+            </p>
+          </div>
+          <div>
+            <h4 class="">Personalized for You:</h4>
+            <p>
+              Get tailored recommendations that match your interests and
+              preferences. Whether you're on the hunt for a sleek coffee maker
+              or a comfy sofa, Loots makes finding the perfect item quick and
+              easy.
+            </p>
+          </div>
+          <div>
+            <h4 class="">Safe and Trusted Transactions:</h4>
+            <p>
+              At Loots, safety comes first. Verified profiles and secure payment
+              options ensure a trustworthy environment for all users. Say
+              goodbye to scams and hello to peace of mind as you buy and sell
+              with confidence.
+            </p>
+          </div>
+          <div>
+            <h4 class="">Sustainable Shopping:</h4>
+            <p>
+              Join the growing movement for a greener planet! By choosing
+              pre-loved items, you’re reducing waste and contributing to a more
+              sustainable future. With Loots, every transaction makes a
+              difference.
+            </p>
+          </div>
+          <div>
+            <h4 class="">Privacy and Security:</h4>
+            <p>
+              We value your privacy and work hard to protect your personal data.
+              Your information is securely stored, and you have full control
+              over your account. Learn more in our detailed privacy policy.
+            </p>
+          </div>
+          <div>
+            <p class="md:text-[1.375rem] font-bold text-sm mb-1">
+              Updated on: Jan 18, 2025
+            </p>
+            <p class="md:text-[1.375rem] font-bold text-sm">Version: 2.4.1</p>
+            Transform your home and save money with Loots. Download now and
+            discover the smarter way to shop!
+          </div>
+        </div>
+        <div
+          class="bg-white py-5 space-y-5 md:space-y-8 md:text-[1.375rem] md:font-medium md:py-20"
+        >
+          <div>
+            <h4 class="md:text-2xl font-bold">What&apos;s new</h4>
+            <p>Bug fixes, improved performance.</p>
+          </div>
+          <div>
+            <h4 class="md:text-2xl font-bold">Data safety</h4>
+            <p>
+              This app may collect the following information. The developer
+              provided this information and may update it over time.
+            </p>
+            <p>This app may share these data types with third parties</p>
+          </div>
+          <ul class="list-disc list-inside">
+            This app may collect these data types
+            <li>You can request that data be deleted</li>
+            <li>Data is encrypted in transit</li>
+            <li>Location, Personal info, camera permissions</li>
+          </ul>
+          <div>
+            <h4 class="md:text-2xl font-bold md:pt-3">Developer Details:</h4>
+            <p>Loot technologies limited.</p>
+            <p>+234 8900 9267</p>
+            <p>Copyright: Loot technologies limited, all rights reserved.</p>
+          </div>
+          <div class="md:pb-7">
+            <h4 class="md:text-2xl font-bold md:pt-3">Privacy policy:</h4>
+            <a href="https://lootapp.shop/privacy-policy.html">
+              https://lootapp.shop/privacy-policy.html
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script>
+    // window.addEventListener("load", function () {
+    const downloadCheck = document.getElementById("downloadCheck");
+    if (/android/i.test(window.navigator.userAgent)) {
+      downloadCheck.innerHTML = `<div class="border-secondary border rounded-[10px] p-5 mb-11">
+            <a
+              class="text-sm font-bold w-full rounded-[30px] bg-[#155407] h-10 text-white flex items-center justify-center"
+              href="https://firebasestorage.googleapis.com/v0/b/loot-40974.appspot.com/o/lootsappforandroid%2Floots.apk?alt=media&token=2328971d-fdad-4543-b413-22fc1535f232"
+            >
+              Download loot for android
+            </a>
+          </div>`;
+    } else if (
+      /iPad|iPhone|iPod/.test(window.navigator.userAgent) &&
+      !window?.MSStream
+    ) {
+      downloadCheck.innerHTML = `
+        <p class="mb-7">
+            <a
+              href="https://apps.apple.com/ng/app/huntgame/id6502562121"
+              target="_blank"
+              class="hover:underline text-customBlue mr-1"
+            >
+              Click here
+            </a>
+            to download the iOS app on App store
+          </p>
+        <span class="flex gap-2 items-center mb-7">
+          <p class="text-sm md:text-[1.375rem]">Category- Social network</p>
+          <svg class="size-[18px]" width="34" height="30" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.5 10C27.8472 10 29.75 8.32107 29.75 6.25C29.75 4.17893 27.8472 2.5 25.5 2.5C23.1528 2.5 21.25 4.17893 21.25 6.25C21.25 8.32107 23.1528 10 25.5 10Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.5 18.75C10.8472 18.75 12.75 17.0711 12.75 15C12.75 12.9289 10.8472 11.25 8.5 11.25C6.15279 11.25 4.25 12.9289 4.25 15C4.25 17.0711 6.15279 18.75 8.5 18.75Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25.5 27.5C27.8472 27.5 29.75 25.8211 29.75 23.75C29.75 21.6789 27.8472 20 25.5 20C23.1528 20 21.25 21.6789 21.25 23.75C21.25 25.8211 23.1528 27.5 25.5 27.5Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.041 16.875L21.9577 21.875M21.9577 8.125L12.041 13.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+        </span>
+        `;
+    } else {
+      downloadCheck.innerHTML = `
+        <p class="text-3xl mb-7 text-[#7E7E7E]">
+            App is not available for download on desktop
+        </p>
+        <span class="flex gap-2 items-center mb-7">
+          <p class="text-sm md:text-[1.375rem]">Category- Social network</p>
+          <svg width="34" height="30" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.5 10C27.8472 10 29.75 8.32107 29.75 6.25C29.75 4.17893 27.8472 2.5 25.5 2.5C23.1528 2.5 21.25 4.17893 21.25 6.25C21.25 8.32107 23.1528 10 25.5 10Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.5 18.75C10.8472 18.75 12.75 17.0711 12.75 15C12.75 12.9289 10.8472 11.25 8.5 11.25C6.15279 11.25 4.25 12.9289 4.25 15C4.25 17.0711 6.15279 18.75 8.5 18.75Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25.5 27.5C27.8472 27.5 29.75 25.8211 29.75 23.75C29.75 21.6789 27.8472 20 25.5 20C23.1528 20 21.25 21.6789 21.25 23.75C21.25 25.8211 23.1528 27.5 25.5 27.5Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.041 16.875L21.9577 21.875M21.9577 8.125L12.041 13.125" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        </span>
+        `;
+    }
+    // });
+  </script>
+</html>
