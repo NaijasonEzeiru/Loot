@@ -1129,6 +1129,10 @@ video {
   font-family: righteous, roboto;
 }
 
+.font-Russo {
+  font-family: Russo One, sans;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;

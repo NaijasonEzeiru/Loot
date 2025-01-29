@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         Inter: ["inter", "sans-serif"],
         Righteous: ["righteous", "roboto"],
+        Russo: ["Russo One", "sans"],
       },
     },
   },
